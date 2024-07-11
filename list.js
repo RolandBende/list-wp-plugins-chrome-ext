@@ -69,5 +69,6 @@
 
     console.log("WordPress plugins list:");
     console.table(pluginList, ["name", "author", "url", "version", "update"]);
+    window.wordPressPlugins = pluginList;
 
 }) ();

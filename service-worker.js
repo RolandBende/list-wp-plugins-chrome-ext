@@ -27,7 +27,8 @@ chrome.action.onClicked.addListener(async (tab) => {
                     target: {
                         tabId: tab.id
                     },
-                    files: ["list.js"],
+                    world: "MAIN", // https://developer.chrome.com/docs/extensions/reference/api/scripting
+                    files: ["list.js"]
                 })
                 .then(() => console.log("WP Plugins - List js injected!"));
         } else if (nextState === 'OFF') {
